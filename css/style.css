@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.menu_bar{
+  display: block;
+  background: rgba(153, 209, 220, 0);
+  width: auto;
+  height: auto;
+}
+
+.content-wrap{
+  display:block;
+  background-color:rgba(153, 209, 220, 10);
+  width: auto;
+  height: auto;
+  background-image: url(../images/cookbook.jpg);
+  background-size:cover;
+  height: 100%;
+}
+
+.heading{
+  display: block;
+  height : 400px;
+  width: auto;
+  color: snow;
+}
+
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
