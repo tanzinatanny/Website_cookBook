@@ -9,12 +9,27 @@ body {
   margin: 0;
 }
 
-.menu_bar{
-  display: block;
-  background: rgba(153, 209, 220, 0);
-  width: auto;
-  height: auto;
+.header{
+  padding: 80px; /* some padding */
+  margin: 20px;
+  text-align: center; /* center the text */
+  background: rgb(149, 214, 208); /* green background */
+  /* background-image: url(../images/cookbook.jpg); */
+  color: white; /* white text color */
+
 }
+
+.header h1 {
+  font-size: 60px;
+  font-family: cursive;
+  padding-bottom: 20px;
+}
+
+.header p {
+  font-family: monospace;
+  font-size: 20px;
+}
+
 
 .content-wrap{
   display:block;
@@ -26,22 +41,31 @@ body {
   height: 100%;
 }
 
-.heading{
+/* .heading{
   display: block;
   height : 400px;
   width: auto;
   color: snow;
-}
+} */
 
 
 
 /* Navigation
 -------------------------*/
+/* Style the navigation bar*/
+.navbar{
+  overflow: hidden;
+  font-family: sans-serif;
+  display: block;
+  Color: rgba(145, 210, 200, 0);
+  width: auto;
+  height: auto;
+}
 nav {
   text-align: center;
   background: white;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
   /*z-index: 100;*/
 }
@@ -51,4 +75,138 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  color: rgb(117, 117, 117);
 }
+
+nav a:hover {
+  color: rgb(179, 40, 121);
+}
+
+nav a:checked {
+  color: rgb(48, 48, 50);
+}
+
+/* -- Content Columns -- */
+
+/* --column container-- */
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+  height: 100%;
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  height:auto;
+  background-color: rgb(238, 182, 225); /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+/* --Article Container --  */
+
+.article_container {
+  /* padding: 20px;
+  margin: 20px; */
+  background-color: white;
+}
+
+
+/* --Slideshow-- */
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    display:center;
+    width: 12000px;
+    height: 400px;
+    margin: auto;
+    margin-left: 200px;
+    margin-right: auto;
+    padding: 10px 10px 10px;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {
+  background-image: url(../images/cookbook.jpg);
+  max-width: 720px;
+  max-height:400px;
+
+}
+.slide2 {
+  background-image: url(../images/pic1.jpg);
+  max-width: 720px;
+  max-height:400px;
+}
+.slide3 {
+  background-image: url(../images/pic2.jpg);
+  max-width: 720px;
+  max-height:400px;
+}
+.slide4 {
+  background-image: url(../images/pic3.jpg);
+  max-width: 720px;
+  max-height:400px;
+}
+.slide5 {background: pink;}
+
+
+/* Turn Js Flipbook */
+
+#book{
+  width:1150px;
+  height:400px;
+}
+
+#book.turn-page{
+  background-color: #ddd;
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+/* // */
