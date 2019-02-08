@@ -43,10 +43,11 @@ $(function() {
 // TURN.JS FLIPBOOK
 
   $(window).ready(function(){
-      $('#book').turn({
+      $('.book').turn({
         display: 'double',
         acceleration: true,
-        elevation: 50
+        elevation: 50,
+        autocenter: true
       });
   });
 
@@ -54,9 +55,9 @@ $(function() {
   $(window).bind('keydown', function(e){
 
       if (e.keyCode==37)
-        $('#book').turn('previous');
+        $('.book').turn('previous');
       else if (e.keyCode == 39)
-        $('#book').turn('next');
+        $('.book').turn('next');
   });
 
 

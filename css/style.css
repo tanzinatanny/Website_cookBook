@@ -192,12 +192,12 @@ nav a:checked {
 
 /* Turn Js Flipbook */
 
-#book{
-  width:1150px;
-  height:400px;
+.book{
+  width:auto;
+  height:12000px;
 }
 
-#book.turn-page{
+.book .turn-page{
   background-color: #ddd;
   background-size: 100% 100%;
 }
