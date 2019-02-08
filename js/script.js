@@ -43,12 +43,18 @@ $(function() {
 // TURN.JS FLIPBOOK
 
   $(window).ready(function(){
-      $('.book').turn({
-        display: 'double',
-        acceleration: true,
-        elevation: 50,
-        autocenter: true
-      });
+     console.log('I ran');
+      // $('.book').turn({
+      //   display: 'double',
+      //   acceleration: true,
+      //   elevation: 50,
+      //   autocenter: true
+      // });
+      $(".book").turn({
+  		width: 400,
+  		height: 300,
+  		autoCenter: true
+	   });
   });
 
 

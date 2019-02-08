@@ -193,8 +193,8 @@ nav a:checked {
 /* Turn Js Flipbook */
 
 .book{
-  width:auto;
-  height:12000px;
+  /* width:700px;
+  height:800px; */
 }
 
 .book .turn-page{
